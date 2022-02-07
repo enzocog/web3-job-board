@@ -1,0 +1,267 @@
+/* GLOBAL STYLES */
+body {
+    background: black;
+    margin: 0;
+    overflow: hidden;
+    color: white;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        color: white;
+    }
+
+
+    .typewriter h1 {
+        color: #fff;
+        font-size: 5vw;
+        font-family: monospace;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid green; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+            typing 3.5s steps(30, end),
+            blink-caret .5s step-end infinite;
+        }
+
+    .typewriter h2 {
+    color: green;
+    font-size: 1vw;
+    font-family: monospace;
+    overflow: hidden; 
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    }
+
+    /* set opacity of the clue text to 0 so we can fade it in on click of the button */
+
+    #clue-text {
+        opacity: 0;
+    }
+    .typewriter {
+        text-align: center;
+    }
+
+    #join-button {
+        margin-top: 20px;
+        width: 100px;
+        height: 35px;
+        background-color: green;
+        color: white;
+        animation: fadein 10s;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: green}
+    }
+
+    @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+    }
+
+    #key {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        padding-right: 10px;
+    }
+
+    #enter-text {
+        font-family: monospace;
+        color: yellow;
+        opacity: 0;
+        font-size: 3.5vw;
+    }
+
+    #enter-text-link {
+        color:yellow;
+    }
+
+    /* home page styling*/
+    #welcome-text {
+        font-size: 3vw;
+    }
+    /* fade in the decision text 3 seconds after loading */
+
+    #decision-text {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        animation: fadein 10s;
+    }
+
+    #button-search {
+        background-color: blue;
+        color: white;
+    }
+
+    #button-add {
+        background-color: green;
+        color: white;
+    }
+
+    #button-delete {
+        background-color: red;
+        color: white;
+    }
+
+    /* search page styling */
+    /* nav bar*/
+
+    #search-text {
+        color: blue;
+    }
+    #button-home {
+        background-color: yellow;
+    }
+
+    .active{
+        border: solid white 3px;
+    }
+    /*move the typewriter text to the top of the page*/
+    #search-container {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    #search-box {
+        box-sizing: border-box;
+        width: 50vh;
+        height: 80vh;
+        border: 10px solid green;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    #company-search {
+        padding: 5px;
+    }
+
+    #title-search {
+        padding: 5px;
+    }
+
+    #salary-search {
+        padding: 5px;
+    }
+
+    #role-search {
+        padding: 5px;
+    }
+
+    #contact-search {
+        padding: 5px;
+    }
+
+    #search-box label {
+        color: white;
+    }
+
+    input {
+        height: 10%;
+        width: 50%;
+        background-color: black;
+        color: green;
+    }
+
+    select {
+        background-color: black;
+        color: green;
+    }
+
+    #submit-button {
+        background-color: green;
+        color: white;
+    }
+
+    #reset-button {
+        background-color: red;
+        color: white;
+    }
+
+    /* search results styling */
+    #search-results-text {
+        font-size: 2vw;
+        padding-bottom: 10px;
+    }
+
+    #search-results-box {
+        box-sizing: border-box;
+        width: 100vh;
+        height: 80vh;
+        border: 10px solid green;
+        display: table;
+        flex-direction: column;
+        padding: 5px;
+        color: white;
+    }
+
+    .search-results-row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-results-child {
+        text-align: center;
+        border: 2px solid white;
+        box-sizing: border-box;
+        width: 15vh;
+        height: 15vh;
+        word-wrap: break-word;
+    }
+
+    .search-results-child h3 {
+        color: green;
+    }
+
+    tr {
+        font-size: 1.5vw;
+        color: green;
+       
+    }
+
+    td {
+        color: white;
+        text-decoration: none;
+        font-size: 1.25vw;
+        border: 2px solid green;
+
+    }
+
+    /* add page */
+    #contribute-text {
+        color: green;
+    }
+
+    /* delete page */
+    #remove-text {
+        color: red;
+    }
+
+    .edit-link:link {
+        color: green;
+    }
+
+    .edit-link:visited {
+        color: yellow;
+    }
+
+    .letter {
+        display: inline-block;
+        opacity: 0;
+        color: white;
+    }

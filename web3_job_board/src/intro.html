@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>building the metaverse...</title>
+    <link rel = "shortcut icon" type = "image/png" href = "logo.png">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #key-img {
+            width: 50px;
+            opacity: 0;
+        }
+        </style>
+
+<body>
+    <div class = "container">
+        <div class = "typewriter">
+            <h1 id = "welcome-text">welcome to web3.</h1>
+            <h2 id = "clue-text">find the key to get into the website. (hint click the corners)</h2>
+            
+            <button id = "join-button">try and get in</button>
+        </div>
+    </div>
+
+    <!-- hide key in the bottom right -->
+    <div id = "key">
+        <a href = "home.html" id ="enter-text-link"><img id = "key-img" src = "key.png"></a>
+    </div>
+
+    <script>
+        $("#join-button").click(function() {
+            $("#clue-text").css('opacity', '1.0');
+        })
+
+        $("#key").mouseover(function() {
+            $("#key-img").css('opacity', '1.0');
+        })
+    </script>
+</body>
+
+
